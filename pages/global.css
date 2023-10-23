@@ -1,0 +1,40 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    margin: 0 15px;
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --size: calc(100vw - 360px) / 1560;
+}
