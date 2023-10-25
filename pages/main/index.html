@@ -123,76 +123,39 @@
                 </div>
               </li>
             </ul>
-            <div class="swiper" id="catalog-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <li class="catalog__list-item">
-                    <div class="catalog__list-left">
-                      <img src="./images/catalog/img-5.png" alt="img" />
-                    </div>
-                    <div class="catalog__list-right">
-                      <div class="catalog__list-wrapper">
-                        <div class="catalog__list-title">
-                          <p class="catalog__list-sup">600 т.р.</p>
-                          <p class="catalog__list-sub">минимальная цена</p>
-                        </div>
-                        <p class="catalog__list-text">
-                          Они имеют усиленное исполнение и гарантированную
-                          высокую точность.
-                        </p>
-                      </div>
-                      <button class="catalog__list-button">
-                        узнать подробнее
-                      </button>
-                    </div>
-                  </li>
-                </div>
-                <div class="swiper-slide">
-                  <li class="catalog__list-item">
-                    <div class="catalog__list-left">
-                      <img src="./images/catalog/img-5.png" alt="img" />
-                    </div>
-                    <div class="catalog__list-right">
-                      <div class="catalog__list-wrapper">
-                        <div class="catalog__list-title">
-                          <p class="catalog__list-sup">600 т.р.</p>
-                          <p class="catalog__list-sub">минимальная цена</p>
-                        </div>
-                        <p class="catalog__list-text">
-                          Они имеют усиленное исполнение и гарантированную
-                          высокую точность.
-                        </p>
-                      </div>
-                      <button class="catalog__list-button">
-                        узнать подробнее
-                      </button>
-                    </div>
-                  </li>
-                </div>
-                <div class="swiper-slide">
-                  <li class="catalog__list-item">
-                    <div class="catalog__list-left">
-                      <img src="./images/catalog/img-5.png" alt="img" />
-                    </div>
-                    <div class="catalog__list-right">
-                      <div class="catalog__list-wrapper">
-                        <div class="catalog__list-title">
-                          <p class="catalog__list-sup">600 т.р.</p>
-                          <p class="catalog__list-sub">минимальная цена</p>
-                        </div>
-                        <p class="catalog__list-text">
-                          Они имеют усиленное исполнение и гарантированную
-                          высокую точность.
-                        </p>
-                      </div>
-                      <button class="catalog__list-button">
-                        узнать подробнее
-                      </button>
-                    </div>
-                  </li>
-                </div>
-              </div>
-            </div>
+            <button class="catalog__button prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="16"
+                viewBox="0 0 24 16"
+                fill="none"
+              >
+                <path
+                  d="M22.9432 8.75018C23.3606 8.33583 23.3606 7.66417 22.9432 7.24982L16.1418 0.497771C15.7244 0.0834251 15.0477 0.0834251 14.6303 0.497771C14.2129 0.912118 14.2129 1.58393 14.6303 1.99827L20.676 8L14.6303 14.0017C14.2129 14.4161 14.2129 15.0879 14.6303 15.5022C15.0477 15.9166 15.7244 15.9166 16.1418 15.5022L22.9432 8.75018ZM0.8125 9.06098H22.1875V6.93902H0.8125V9.06098Z"
+                  fill="#008FFF"
+                />
+              </svg>
+            </button>
+            <button class="catalog__button next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="16"
+                viewBox="0 0 24 16"
+                fill="none"
+              >
+                <path
+                  d="M22.9432 8.75018C23.3606 8.33583 23.3606 7.66417 22.9432 7.24982L16.1418 0.497771C15.7244 0.0834251 15.0477 0.0834251 14.6303 0.497771C14.2129 0.912118 14.2129 1.58393 14.6303 1.99827L20.676 8L14.6303 14.0017C14.2129 14.4161 14.2129 15.0879 14.6303 15.5022C15.0477 15.9166 15.7244 15.9166 16.1418 15.5022L22.9432 8.75018ZM0.8125 9.06098H22.1875V6.93902H0.8125V9.06098Z"
+                  fill="#008FFF"
+                />
+              </svg>
+            </button>
+            <p class="catalog__step">
+              <span class="catalog__currentStep"></span>/<span
+                class="catalog__totalStep"
+              ></span>
+            </p>
           </div>
         </div>
       </div>
@@ -232,7 +195,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="project">
+      <div class="project">
         <div class="project__inner">
           <div class="container">
             <h2 class="title">Наши проекты</h2>
@@ -306,64 +269,198 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-abilities">
+              <div class="swiper-pagination"></div>
 
-            <div class="swiper-button-prev">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="41"
-                viewBox="0 0 40 41"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_18_632)">
-                  <path
-                    d="M28.0303 21.0303C28.3232 20.7374 28.3232 20.2626 28.0303 19.9697L23.2574 15.1967C22.9645 14.9038 22.4896 14.9038 22.1967 15.1967C21.9038 15.4896 21.9038 15.9645 22.1967 16.2574L26.4393 20.5L22.1967 24.7426C21.9038 25.0355 21.9038 25.5104 22.1967 25.8033C22.4896 26.0962 22.9645 26.0962 23.2574 25.8033L28.0303 21.0303ZM12.5 21.25H27.5V19.75H12.5V21.25Z"
-                    fill="#008FFF"
-                  />
-                  <path
-                    d="M1 20.5C1 10.0066 9.50659 1.5 20 1.5C30.4934 1.5 39 10.0066 39 20.5C39 30.9934 30.4934 39.5 20 39.5C9.50659 39.5 1 30.9934 1 20.5Z"
-                    stroke="#008FFF"
-                    stroke-width="2"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_18_632">
-                    <rect width="40" height="41" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div class="swiper-button-next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="41"
-                viewBox="0 0 40 41"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_18_632)">
-                  <path
-                    d="M28.0303 21.0303C28.3232 20.7374 28.3232 20.2626 28.0303 19.9697L23.2574 15.1967C22.9645 14.9038 22.4896 14.9038 22.1967 15.1967C21.9038 15.4896 21.9038 15.9645 22.1967 16.2574L26.4393 20.5L22.1967 24.7426C21.9038 25.0355 21.9038 25.5104 22.1967 25.8033C22.4896 26.0962 22.9645 26.0962 23.2574 25.8033L28.0303 21.0303ZM12.5 21.25H27.5V19.75H12.5V21.25Z"
-                    fill="#008FFF"
-                  />
-                  <path
-                    d="M1 20.5C1 10.0066 9.50659 1.5 20 1.5C30.4934 1.5 39 10.0066 39 20.5C39 30.9934 30.4934 39.5 20 39.5C9.50659 39.5 1 30.9934 1 20.5Z"
-                    stroke="#008FFF"
-                    stroke-width="2"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_18_632">
-                    <rect width="40" height="41" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+              <div class="swiper-button-prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_18_632)">
+                    <path
+                      d="M28.0303 21.0303C28.3232 20.7374 28.3232 20.2626 28.0303 19.9697L23.2574 15.1967C22.9645 14.9038 22.4896 14.9038 22.1967 15.1967C21.9038 15.4896 21.9038 15.9645 22.1967 16.2574L26.4393 20.5L22.1967 24.7426C21.9038 25.0355 21.9038 25.5104 22.1967 25.8033C22.4896 26.0962 22.9645 26.0962 23.2574 25.8033L28.0303 21.0303ZM12.5 21.25H27.5V19.75H12.5V21.25Z"
+                      fill="#008FFF"
+                    />
+                    <path
+                      d="M1 20.5C1 10.0066 9.50659 1.5 20 1.5C30.4934 1.5 39 10.0066 39 20.5C39 30.9934 30.4934 39.5 20 39.5C9.50659 39.5 1 30.9934 1 20.5Z"
+                      stroke="#008FFF"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_18_632">
+                      <rect width="40" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_18_632)">
+                    <path
+                      d="M28.0303 21.0303C28.3232 20.7374 28.3232 20.2626 28.0303 19.9697L23.2574 15.1967C22.9645 14.9038 22.4896 14.9038 22.1967 15.1967C21.9038 15.4896 21.9038 15.9645 22.1967 16.2574L26.4393 20.5L22.1967 24.7426C21.9038 25.0355 21.9038 25.5104 22.1967 25.8033C22.4896 26.0962 22.9645 26.0962 23.2574 25.8033L28.0303 21.0303ZM12.5 21.25H27.5V19.75H12.5V21.25Z"
+                      fill="#008FFF"
+                    />
+                    <path
+                      d="M1 20.5C1 10.0066 9.50659 1.5 20 1.5C30.4934 1.5 39 10.0066 39 20.5C39 30.9934 30.4934 39.5 20 39.5C9.50659 39.5 1 30.9934 1 20.5Z"
+                      stroke="#008FFF"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_18_632">
+                      <rect width="40" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-      </div> -->
-      <div class="advantages">
+      </div>
+      <!-- <div class="project">
+        <div class="project__inner">
+          <div class="container">
+            <h2 class="title">Наши проекты</h2>
+          </div>
+            <ul class="project__list">
+              <li class="project__list-item">
+                <div class="project__list-img">
+                  <img src="./images/project/slide-img-1.png" alt="slide-img" />
+                  <p class="project__list-text">
+                    Автомобильные весы с максимальной нагрузкой до 60 тонн
+                    наиболее востребованы на крупных промышленных предприятиях,
+                    морских и речных портах, железнодорожных станциях и складах
+                    с большим грузооборотом.
+                  </p>
+                </div>
+              </li>
+              <li class="project__list-item">
+                <div class="project__list-img">
+                  <img src="./images/project/slide-img-2.png" alt="slide-img" />
+                  <p class="project__list-text">
+                    Автомобильные весы с максимальной нагрузкой до 60 тонн
+                    наиболее востребованы на крупных промышленных предприятиях,
+                    морских и речных портах, железнодорожных станциях и складах
+                    с большим грузооборотом.
+                  </p>
+                </div>
+              </li>
+              <li class="project__list-item">
+                <div class="project__list-img">
+                  <img src="./images/project/slide-img-3.png" alt="slide-img" />
+                  <p class="project__list-text">
+                    Автомобильные весы с максимальной нагрузкой до 60 тонн
+                    наиболее востребованы на крупных промышленных предприятиях,
+                    морских и речных портах, железнодорожных станциях и складах
+                    с большим грузооборотом.
+                  </p>
+                </div>
+              </li>
+              <li class="project__list-item">
+                <div class="project__list-img">
+                  <img src="./images/project/slide-img-1.png" alt="slide-img" />
+                  <p class="project__list-text">
+                    Автомобильные весы с максимальной нагрузкой до 60 тонн
+                    наиболее востребованы на крупных промышленных предприятиях,
+                    морских и речных портах, железнодорожных станциях и складах
+                    с большим грузооборотом.
+                  </p>
+                </div>
+              </li>
+              <li class="project__list-item">
+                <div class="project__list-img">
+                  <img src="./images/project/slide-img-2.png" alt="slide-img" />
+                  <p class="project__list-text">
+                    Автомобильные весы с максимальной нагрузкой до 60 тонн
+                    наиболее востребованы на крупных промышленных предприятиях,
+                    морских и речных портах, железнодорожных станциях и складах
+                    с большим грузооборотом.
+                  </p>
+                </div>
+              </li>
+              <li class="project__list-item">
+                <div class="project__list-img">
+                  <img src="./images/project/slide-img-3.png" alt="slide-img" />
+                  <p class="project__list-text">
+                    Автомобильные весы с максимальной нагрузкой до 60 тонн
+                    наиболее востребованы на крупных промышленных предприятиях,
+                    морских и речных портах, железнодорожных станциях и складах
+                    с большим грузооборотом.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div class="project__abilities">
+              <button class="project__button prev">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_18_632)">
+                    <path
+                      d="M28.0303 21.0303C28.3232 20.7374 28.3232 20.2626 28.0303 19.9697L23.2574 15.1967C22.9645 14.9038 22.4896 14.9038 22.1967 15.1967C21.9038 15.4896 21.9038 15.9645 22.1967 16.2574L26.4393 20.5L22.1967 24.7426C21.9038 25.0355 21.9038 25.5104 22.1967 25.8033C22.4896 26.0962 22.9645 26.0962 23.2574 25.8033L28.0303 21.0303ZM12.5 21.25H27.5V19.75H12.5V21.25Z"
+                      fill="#008FFF"
+                    />
+                    <path
+                      d="M1 20.5C1 10.0066 9.50659 1.5 20 1.5C30.4934 1.5 39 10.0066 39 20.5C39 30.9934 30.4934 39.5 20 39.5C9.50659 39.5 1 30.9934 1 20.5Z"
+                      stroke="#008FFF"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_18_632">
+                      <rect width="40" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <ul class="project__pagination">
+              </ul>
+              <button class="project__button next">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_18_632)">
+                    <path
+                      d="M28.0303 21.0303C28.3232 20.7374 28.3232 20.2626 28.0303 19.9697L23.2574 15.1967C22.9645 14.9038 22.4896 14.9038 22.1967 15.1967C21.9038 15.4896 21.9038 15.9645 22.1967 16.2574L26.4393 20.5L22.1967 24.7426C21.9038 25.0355 21.9038 25.5104 22.1967 25.8033C22.4896 26.0962 22.9645 26.0962 23.2574 25.8033L28.0303 21.0303ZM12.5 21.25H27.5V19.75H12.5V21.25Z"
+                      fill="#008FFF"
+                    />
+                    <path
+                      d="M1 20.5C1 10.0066 9.50659 1.5 20 1.5C30.4934 1.5 39 10.0066 39 20.5C39 30.9934 30.4934 39.5 20 39.5C9.50659 39.5 1 30.9934 1 20.5Z"
+                      stroke="#008FFF"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_18_632">
+                      <rect width="40" height="41" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button> 
+            </div>
+          </div>
+        </div>  -->
+      </div>
+     <div class="advantages">
         <div class="container">
           <div class="advantages__inner">
             <h2 class="title">Преимущества</h2>
